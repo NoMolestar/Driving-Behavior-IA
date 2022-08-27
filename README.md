@@ -2,11 +2,10 @@
 # Driving-Behavior-IA
 System to predict if it's dangerous for someone to drive based on their behavior.
 
+## Team BMT - Advanced artificial intelligence for data science
 <p align="center">
     <img src="https://github.com/NoMolestar/Driving-Behavior-IA/blob/main/.github/images/LogoBMT.PNG" alt="logo-bmt" width="400"/>
 </p>
-
-## Team BMT - Advanced artificial intelligence for data science
 
 ## Useful links
 - 🪟 [Wall of Work - Project](https://github.com/users/NoMolestar/projects/1)
