@@ -2,7 +2,7 @@
 # Driving-Behavior-IA
 System to predict if it's dangerous for someone to drive based on their behavior.
 
-<img src="" alt="logo-bmt" width="400"/>
+<img src="https://github.com/NoMolestar/Driving-Behavior-IA/blob/main/.github/images/LogoBMT.PNG" alt="logo-bmt" width="400"/>
 
 ## Team BMT - Advanced artificial intelligence for data science
 
