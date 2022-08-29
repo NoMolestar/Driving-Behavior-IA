@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Driving Behavior}
+\author{
+Ernesto Adrián Álvarez Salazar  A016\\
+Carlos Javier Leal Beltrán  A01638192\\
+Carlos Moisés Chávez Jiménez  A01637322\\
+Luis Armando Salazar López  A01114901\\
+}
+\date{Agosto 2022 - Septiembre 2022}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+El comportamiento agresivo al volante es el principal factor de los accidentes de tráfico. Según informa la Fundación AAA para la Seguridad Vial, en 106.727 accidentes mortales -el 55,7% del total- durante un periodo reciente de cuatro años estuvieron implicados conductores que cometieron una o más acciones de conducción agresiva. Por lo tanto, ¿cómo predecir el comportamiento peligroso al volante de forma rápida y precisa?
+
+La conducción agresiva incluye el exceso de velocidad, las pausas repentinas y los giros bruscos a la izquierda o a la derecha. Todos estos eventos se reflejan en los datos del acelerómetro y el giroscopio. Por lo tanto, sabiendo que hoy en día casi todo el mundo posee un smartphone que tiene una gran variedad de sensores, hemos diseñado una aplicación de recopilación de datos en android basada en los sensores del acelerómetro y el giroscopio.
+
+\section{Tratamiento Inicial de los Datos}
+
+Para comenzar a trabajar con los datos, es necesario que pasen por un proceso de preparación que nos permita obtener la mejor parte de ellos. Este proceso se divide en dos partes: Limpieza y Transformación. A continuación explicaremos ambas partes de esta etapa:
+
+    \subsection{Limpieza de los datos}
+
+        La limpieza es una parte fundamental del tratamiento de la información. En esta etapa, se busca eliminar la mayor cantidad de imperfecciones que nos pudieramos llegar a encontrar. Cosas como valores faltantes, datos fuera de rango, dividir la información disponible en "entrenamiento" y "pruebas", eliminar columnas innecesarias para el análisis, etc. Estos son algunos de los comandos que utilizamos para esta etapa:
+
+        \begin{lstlisting}
+            # Importando las librerías
+                import pandas as pd
+                from sklearn import svm
+                import matplotlib.pyplot as plt
+                import numpy as np
+            # Veremos también la cantidad de registros y variables que tenemos disponibles
+                Nrows = t_train.shape[0]
+                Ncols = t_train.shape[1]
+            # Haremos un resúmen a grandes rasgos de la información disponible
+                t_train.describe()
+            # Mostraremos el tipo de dato de cada variable de la bd
+                t_train.dtypes
+            # Función para revisar que el dataset de training no tenga datos faltantes
+                pd.isna(t_train).sum()
+        \end{lstlisting}
+
+        En el caso de nuestra base de datos, no hicimos ninguna limpieza (de momento). Encontramos muchos valores atípicos en las variables relacionadas con el movimiento de los conductores (giroscopio y acelerometro), pero no los eliminamos. Al ser demasiados, puede generar que se vaya mucha información que puede ser valiosa para nuestro modelo. Aunque no hemos definido aún si los dejaremos o no, decidimos esperar hasta avanzar un poco más en nuestra manipulación de los datos. Pero lo importante, no encontramos valores faltantes, ni columnas innecesarias.
+    
+
+    \subsection{Transformación de los datos}
+        
+
+\end{document}
