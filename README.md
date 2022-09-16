@@ -12,10 +12,6 @@ System to predict if it's dangerous for someone to drive based on their behavior
 - 🪲 [Issue Tracker](https://github.com/NoMolestar/Driving-Behavior-IA/issues)
 - 📑 [Change management Policy](.github/CONTRIBUTING.md)
 - 🏛️ [Wiki - Office](https://github.com/NoMolestar/Driving-Behavior-IA/wiki)
-    - Mission
-    - Vission
-    - Values
-    - Roles
-    - Stakeholders
-    - Environments
-    - Access Management
+    - Introducción
+    - Tratamiento Inicial de los datos
+    - Modelos Implementados
